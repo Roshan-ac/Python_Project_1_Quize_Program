@@ -1,7 +1,7 @@
 # function goes here
 
 from playsound import playsound
-import question as Question
+import question
 import os
 
 
@@ -14,15 +14,15 @@ def play():
             print(f"{mylist.index(item)+1}. {item}")
         select = int(input("\n SELECT : "))
         if (select == 1):
-            Question("science", "1")
+            question.Question("science", "1")
         elif (select == 2):
-            Question("Music", "1")
+            question.Question("Music", "1")
         elif (select == 3):
-            Question("General Knowledge", "1")
+            question.Question("General Knowledge", "1")
         elif (select == 4):
-            Question("History", "1")
+            question.Question("History", "1")
         elif (select == 5):
-            Question("Technology", "1")
+            question.Question("Technology", "1")
         elif (select == 6):
             break
         else:
